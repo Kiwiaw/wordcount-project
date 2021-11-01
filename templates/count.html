@@ -1,0 +1,15 @@
+<h1>There is {{count}} word</h1>
+<a href="{% url 'home' %}">Start Again</a>
+
+<h1>Fulltext:</h1>
+{{fulltest}}
+
+<h1>Najwicej razy:</h1>
+
+{% for word, counttotal in najwiecej %}
+
+<h1>{{word}} - {{counttotal}}</h1>
+<br/>
+
+
+{% endfor %}
